@@ -1,0 +1,55 @@
+////////////////////////////////////////////////////////////////////////
+// Scenario 1:
+////////////////////////////////////////////////////////////////////////
+
+// function oddEven(value) {
+//     if (value % 2 == 0) {
+//         return "even"
+//     }
+//     return "odd"
+// }
+
+// let oddOrEven = oddEven
+
+// console.log(oddEven)   // [Function: oddEven]
+// console.log(oddOrEven) // [Function: oddEven]
+
+////////////////////////////////////////////////////////////////////////
+// Scenario 2:
+////////////////////////////////////////////////////////////////////////
+
+// oddOrEven = function (value) {
+//     if (value % 2 == 0) {
+//         return "even"
+//     }
+//     return "odd"
+// }
+
+// console.log(oddOrEven(2))
+
+////////////////////////////////////////////////////////////////////////
+// Scenario 3: Arrow Function / Anonymous Function / Nameless Function
+////////////////////////////////////////////////////////////////////////
+
+// let oddOrEven = (value) => value%2==0 ? "even" : "odd"
+
+// let oddOrEven1 = (value) => {
+//     if (value % 2 == 0) {
+//         return "even"
+//     }
+//     return "odd"
+// }
+
+////////////////////////////////////////////////////////////////////////
+// Scenario 4: Passing function as a parameter to an another function
+////////////////////////////////////////////////////////////////////////
+
+let add = (val1, val2) => val1 + val2
+let sub = (val1, val2) => val1 - val2
+
+function calc(operation, val1, val2) {
+    return operation(val1, val2)
+}
+
+console.log(calc(add, 1, 2))
+console.log(calc(sub, 1, 2))

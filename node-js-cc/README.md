@@ -1,3 +1,5 @@
+JS Fundamentals https://www.youtube.com/playlist?list=PLhP5RsB7fhE0STpH5yfOtk1Nap4qYas3k
+
 # Node.js Crash Course
 
 > Check nodejs version
